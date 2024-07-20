@@ -89,16 +89,21 @@ export const mergePlates = (collectionsConfig, glamaholicConfig) => {
   };
 };
 
-export const writeCollectionsConfig = (collectionsConfig, glamaholicConfig) => {
+export const writeCollectionsConfig = (
+  collectionsConfig,
+  glamaholicConfig,
+  outputFile,
+) => {
   const newCollectionsConfig = mergePlates(collectionsConfig, glamaholicConfig);
 
-  fs.writeFileSync(
-    "collections.json",
-    JSON.stringify(newCollectionsConfig, null, 2),
-  );
+  // If file already exists, create a backup with timestamp
+  if (fs.existsSync(outputFile)) {
+    const timestamp = new Date().toISOString().replace(/:/g, "");
+    fs.copyFileSync(outputFile, `${outputFile}.${timestamp}.bak`);
+  }
+
+  fs.writeFileSync(outputFile, JSON.stringify(newCollectionsConfig, null, 2));
 
   // Log a success message with the full path to the collections.json file
-  console.log(
-    `collections.json has been written to ${process.cwd()}/collections.json`,
-  );
+  console.log(`collections.json has been written to ${outputFile}`);
 };

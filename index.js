@@ -6,7 +6,7 @@ import * as fs from "node:fs";
 
 const argv = yargs(hideBin(process.argv))
   .usage(
-    "Usage: $0 --collectionsConfig <collectionsConfig> --glamaholicConfig <glamaholicConfig>",
+    "Usage: $0 --collectionsConfig <collectionsConfig> --glamaholicConfig <glamaholicConfig> --outputFile <outputFile>",
   )
   .option("collectionsConfig", {
     alias: "cc",
@@ -22,6 +22,13 @@ const argv = yargs(hideBin(process.argv))
     demandOption: false,
     default: `${process.env.APPDATA}/XIVLauncher/pluginConfigs/Glamaholic.json`,
   })
+  .option("outputFile", {
+    alias: "o",
+    describe: "Path to where you want to save the new collections.json file",
+    type: "string",
+    demandOption: false,
+    default: `${process.env.APPDATA}/XIVLauncher/pluginConfigs/Collections.json`,
+  })
   .help().argv;
 
 // Load JSON file from windows compatible path
@@ -31,4 +38,4 @@ const loadJSON = (path) => {
 const collectionsConfig = loadJSON(argv.collectionsConfig);
 const glamaholicConfig = loadJSON(argv.glamaholicConfig);
 
-writeCollectionsConfig(collectionsConfig, glamaholicConfig);
+writeCollectionsConfig(collectionsConfig, glamaholicConfig, argv.outputFile);
