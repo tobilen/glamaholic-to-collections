@@ -4,24 +4,18 @@
 Convert your glamaholic plates into collections
 
 ## Installation
+1. Make sure nodejs is installed on your computer: https://nodejs.org/en/download/package-manager
+2. Open a terminal (Win+R, type `cmd`, hit enter)
+3. In the window, enter the following command
 ```bash
-npm install glamaholic-to-collections
+npm install -g glamaholic-to-collections
 ```
 
 ## Usage
-To get an overview:
-```bash
-glamaholic-importer help
-```
+1. Open a terminal (see above)
+2. Enter `glamaholic-importer`
 
-To convert your glamaholic plates into collections:
-```bash
-glamaholic-importer
-```
+This will automatically take the Glamaholic and Collections configs from the default installation location of XIVLauncher (`%APPDATA%/XIVLauncher/pluginConfigs`), create a backup of your Collections.json and replace it with a new version that has your Glamaholic plates added to it in a folder called `Imported from Glamaholic`
 
-You can pass custom paths to the glamaholic and collections config files like this:
-```bash
-glamaholic-importer --cc path/to/collections.json --gc path/to/glamaholic.json
-```
-
-The new configuration will be saved in your current directory as `collections.json`
+### Nonstandard installation locations
+Run `glamaholic-importer help` to see a list of commands you can pass to it to change the import and export file paths.
