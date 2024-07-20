@@ -1,5 +1,14 @@
 import * as fs from "node:fs";
 
+const convertSlotName = (slot) => {
+  switch (slot) {
+    case "Hands":
+      return "Gloves";
+    default:
+      return slot;
+  }
+};
+
 export const convertPlates = (glamaholicConfig) =>
   glamaholicConfig["Plates"].map((plate) => ({
     $type: "Collections.GlamourSet, Collections",
@@ -10,7 +19,7 @@ export const convertPlates = (glamaholicConfig) =>
 
         return {
           ...acc,
-          [slot]: {
+          [convertSlotName(slot)]: {
             ...item,
             $type: "Collections.GlamourItem, Collections",
           },
