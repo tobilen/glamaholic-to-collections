@@ -1,6 +1,6 @@
 {
   "name": "glamaholic-to-collections",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert Glamaholic data to Collections",
   "main": "index.js",
   "scripts": {

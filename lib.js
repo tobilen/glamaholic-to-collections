@@ -9,13 +9,28 @@ const convertSlotName = (slot) => {
   }
 };
 
+const isValidSlot = (slot) => {
+  switch (slot) {
+    case "MainHand":
+    case "OffHand":
+    case "Head":
+    case "Body":
+    case "Hands":
+    case "Legs":
+    case "Feet":
+      return true;
+    default:
+      return false;
+  }
+};
+
 export const convertPlates = (glamaholicConfig) =>
   glamaholicConfig["Plates"].map((plate) => ({
     $type: "Collections.GlamourSet, Collections",
     Name: plate.Name,
     Items: Object.entries(plate.Items).reduce(
       (acc, [slot, item]) => {
-        if (slot === "$type") return acc;
+        if (!isValidSlot(slot)) return acc;
 
         return {
           ...acc,
