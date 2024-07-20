@@ -1,0 +1,97 @@
+{
+  "$type": "Glamaholic.Configuration, Glamaholic",
+  "ShowEditorMenu": true,
+  "ShowExamineMenu": true,
+  "ShowTryOnMenu": true,
+  "ShowKofiButton": false,
+  "ItemFilterShowObtainedOnly": false,
+  "Version": 1,
+  "Plates": [
+    {
+      "$type": "Glamaholic.SavedPlate, Glamaholic",
+      "Name": "Set 1",
+      "Items": {
+        "$type": "System.Collections.Generic.Dictionary`2[[Glamaholic.PlateSlot, Glamaholic],[Glamaholic.SavedGlamourItem, Glamaholic]], System.Private.CoreLib",
+        "MainHand": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 40015,
+          "StainId": 30
+        },
+        "OffHand": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 36962,
+          "StainId": 32
+        },
+        "Head": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 42718,
+          "StainId": 12
+        },
+        "Body": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 37877,
+          "StainId": 34
+        },
+        "Gloves": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 41860,
+          "StainId": 54
+        },
+        "Legs": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 41861,
+          "StainId": 22
+        },
+        "Feet": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 37880,
+          "StainId": 10
+        }
+      },
+      "Tags": []
+    },
+    {
+      "$type": "Glamaholic.SavedPlate, Glamaholic",
+      "Name": "Set 2",
+      "Items": {
+        "$type": "System.Collections.Generic.Dictionary`2[[Glamaholic.PlateSlot, Glamaholic],[Glamaholic.SavedGlamourItem, Glamaholic]], System.Private.CoreLib",
+        "MainHand": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 1,
+          "StainId": 0
+        },
+        "OffHand": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 2,
+          "StainId": 0
+        },
+        "Head": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 3,
+          "StainId": 0
+        },
+        "Body": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 4,
+          "StainId": 0
+        },
+        "Gloves": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 5,
+          "StainId": 0
+        },
+        "Legs": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 6,
+          "StainId": 0
+        },
+        "Feet": {
+          "$type": "Glamaholic.SavedGlamourItem, Glamaholic",
+          "ItemId": 7,
+          "StainId": 0
+        }
+      },
+      "Tags": []
+    }
+  ]
+}

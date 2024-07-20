@@ -1,0 +1,26 @@
+{
+  "$type": "Collections.Configuration, Collections",
+  "Favorites": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.HashSet`1[[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "Wishlist": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.Collections.Generic.HashSet`1[[System.UInt32, System.Private.CoreLib]], System.Private.CoreLib]], System.Private.CoreLib"
+  },
+  "WishListed": [],
+  "DresserItemIds": [],
+  "ArmoireItemIds": [],
+  "GlamourTree": {
+    "$type": "Collections.GlamourTree, Collections",
+    "Directories": [
+      {
+        "$type": "Collections.GlamourDirectory, Collections",
+        "Name": "Main",
+        "GlamourSets": [
+        ]
+      }
+    ]
+  },
+  "AutoOpenInstanceTab": false,
+  "ForceTryOn": false,
+  "Version": 1
+}
