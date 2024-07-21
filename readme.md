@@ -12,8 +12,9 @@ npm install -g glamaholic-to-collections
 ```
 
 ## Usage
-1. Open a terminal (see above)
-2. Enter `glamaholic-importer`
+1. Make sure the game is closed
+2. Open a terminal (see above)
+3. Enter `glamaholic-importer`
 
 This will automatically take the Glamaholic and Collections configs from the default installation location of XIVLauncher (`%APPDATA%/XIVLauncher/pluginConfigs`), create a backup of your Collections.json and replace it with a new version that has your Glamaholic plates added to it in a folder called `Imported from Glamaholic`
 
